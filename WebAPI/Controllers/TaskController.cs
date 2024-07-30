@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
             {
                 var retorno = _businessLogicLayer.GetAllTasks();
                
-               //return Ok(tasks);
+                //return Ok(tasks); test lint
                 return Ok(new RetornoREST<TaskModel>() { Error = 0, Mensagem = "Successfully performed operation", Dados = retorno });
             }
             catch (Exception ex)
